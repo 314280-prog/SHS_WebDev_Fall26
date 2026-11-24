@@ -1,11 +1,10 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name: Abdi Ahmed
-        Date Completed: 11/23/2026
-    -->
+    Name: Abdi Ahmed
+    Date Completed: 11/24/2026
+-->
 
 <head>
 
@@ -17,10 +16,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="My favorite sports teams">
 
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Internal Styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+        }
+
+        h1, p {
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        nav {
+            background-color: #003366;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        nav a.active {
+            background-color: #9FB6CD;
+            color: black;
         }
 
         #songs {
@@ -30,22 +58,29 @@
         #songs th,
         #songs td {
             padding: 10px 25px;
-            text-align: left;
-        }
-
-        #songs th {
-            background-color: #dddddd;
+            text-align: center;
         }
 
         #songs img {
             width: 100px;
             height: auto;
         }
+
+        td {
+            color: #FF0000;
+        }
     </style>
 
 </head>
 
 <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="music.html" class="active">Sports Teams</a>
+        <a href="list.html">My Lists</a>
+    </nav>
 
     <h1>My Favorite Sports Teams</h1>
 
@@ -63,7 +98,7 @@
 
         <tr>
             <td>1</td>
-            <td>Liverpool</td>
+            <td style="color:#00FF00; background-color:sienna;">Liverpool</td>
             <td>Soccer</td>
             <td>Premier League</td>
             <td>
@@ -71,7 +106,7 @@
             </td>
         </tr>
 
-        <tr>
+        <tr style="background-color: lightyellow;">
             <td>2</td>
             <td>Barcelona</td>
             <td>Soccer</td>
